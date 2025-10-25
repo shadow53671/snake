@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gelişmiş Snake Oyunu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Gelişmiş Snake Oyunu</h1>
+
+    <div id="game-area">
+        <div id="game-board"></div>
+
+        <div id="info-panel">
+            
+            <div class="user-input">
+                <label for="username">Kullanıcı Adınız:</label>
+                <input type="text" id="username" placeholder="Adınızı girin..." required>
+            </div>
+
+            <div id="score-display">Puan: 0</div>
+            
+            <button class="start-button" id="startButton">Oyuna Başla (Yön Tuşları)</button>
+            
+            <h3>Maks Skorlar</h3>
+            <ul id="highscores-list">
+                </ul>
+
+            <p style="font-size:12px; margin-top:20px; color:#bdc3c7;">Kontrol: Yön Tuşları (Yukarı/Aşağı/Sol/Sağ)</p>
+        </div>
+    </div>
+    
+    <div id="game-over-message">
+        <h1>OYUN BİTTİ!</h1>
+        <p id="final-score"></p>
+        <button class="start-button" onclick="window.location.reload();">Tekrar Dene</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
